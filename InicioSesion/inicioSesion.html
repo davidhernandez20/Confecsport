@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/mi pagina web/InicioSesion/inicioSesion.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="/mi pagina web/img/david-removebg-preview.png" alt="logo">
+        <h2><em>Confecsport</em></h2>
+      </div>
+    <form action="">
+        <div class="seccion-inputs">
+        <img class="i" src="/mi pagina web/img/icons8-usuario2-48.png" alt="usuario">
+        <input id="nombre" type="text" placeholder="Ingresa tu usuario" required>
+      </div>
+        <div class="seccion-inputs">
+          <img class="i" src="/mi pagina web/img/icons8-contraseña-1-60.png" alt="contraseña">
+          <input id="" type="password" name="" placeholder="Ingresa tu contraseña"/>
+        </div>
+    </form>
+      <h4><em>¿Olvide mi contraseña?</em></h4>
+    <div class="botones">
+      <div class="google-btn">
+        <a href="https://accounts.google.com/signout/chrome/landing?continue=https%3A%2F%2Faccounts.google.com%2FServiceLogin%3Felo%3D1&hl=es_419" target="_blank">
+          <img src="/mi pagina web/img/icons8-logo-de-google-48.png" alt="google">
+        </a>
+      </div>
+      <div class="facebook-btn">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+          <img src="/mi pagina web/img/icons8-facebook-nuevo-48.png" alt="facebook">
+        </a>
+      </div>
+    </div>
+    <div class="btn-inferiores">
+      <button class="ingresar" type="button" onclick="validarFormulario()"><em>Ingresar</em></button>
+      <button onclick="window.location.href='registroP.html'" class="registro" title="Registrarse"><em>Registrarse</em></button>
+    </div>
+      <div class="inicio">
+        <h2 class="titulo-inicio">inicio de sesión</h2>
+        <img class="logo-inicio" src="/mi pagina web/img/icons8-derecha-círculo-100.png" alt="inicio">
+      </div>
+    </div>
+    <section id="modal" class="modal">
+      <div class="modal-container">
+        <img src="/mi pagina web/img/icons8-x-120.png" alt="x" class="modal-img">
+        <h2 class="modal-titulo">Inicio de sesion incorrecto</h2>
+        <p class="modal-parrafo">El usuario o contraseña que ingresaste no fue encontrado, verificalo de nuevo y vuelve a intentarlo</p>
+        <a href="#" class="cerrar"onclick="cerrarModal()">Volver</a>
+      </div>
+    </section>
+    <script src="/mi pagina web/InicioSesion/sesion.js"></script>
+  </body>
+</html> 

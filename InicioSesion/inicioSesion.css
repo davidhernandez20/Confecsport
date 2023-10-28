@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: rgb(211, 207, 207);
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 40%;
+  height: 40%;
+}
+
+.container {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15%;
+  gap: 40px;
+  width: 450px;
+}
+
+form .seccion-inputs {
+  position: relative;
+}
+
+form .seccion-inputs input {
+  padding: 20px 80px 20px 100px;
+  text-align: center;
+  margin-bottom: 12px;
+  border-radius: 40px;
+  border-color: transparent;
+}
+
+form .seccion-inputs .i {
+  position: absolute;
+  width: 50px;
+  padding: 15px 0px 8px 15px;
+}
+
+h4 {
+  color: rgb(2, 54, 165);
+  border-bottom: 1px solid rgb(77, 73, 73);
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.botones {
+  display: flex;
+}
+
+.google-btn {
+  margin-right: 45px;
+}
+
+
+.btn-inferiores {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ingresar,
+.registro {
+  width: 150px;
+  height: 50px;
+  background-color: black; /* Nuevo color de fondo */
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 20px; /* Bordes más suaves */
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.ingresar {
+  margin-right: 15px;
+}
+
+.registro {
+  margin-left: 15px;
+}
+
+/* Animación para los botones Ingresar y Registrarse (manten la animacion anterior) */
+.ingresar:hover,
+.registro:hover {
+  background-color: white; /* Cambia el color al pasar el mouse por encima */
+  transform: scale(1.05); /* Escala el botón al pasar el mouse por encima */
+  color: black;
+}
+
+.inicio {
+  background-color: rgb(239, 240, 236);
+  position: absolute;
+  margin-right: 1500px;
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.titulo-inicio {
+  margin-top: 90px;
+  font-size: 50px;
+}
+
+.logo-inicio {
+  margin-top: 140px;
+  height: 150px;
+  width: 150px;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+}
+
+
+.modal-container{
+  margin: auto;
+  width: 90%;
+  max-width: 550px;
+  max-height: 90%;
+  background-color: aliceblue;
+  border-radius: 30px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1.5em;
+  place-items: center;
+}
+
+.modal-titulo{
+  font-size: 2.5rem;
+}
+
+
+.modal-parrafo{
+  margin-bottom: 10px;
+}
+
+.modal-img{
+  width: 90%;
+  max-width: 150px;
+}
+
+.cerrar{
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+  padding: 0.5em 3em;
+  border: 1px solid;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  transition: background-color .3s;
+}
+
+.modal-cerrar:hover{
+  background-color: white; /* Cambia el color al pasar el mouse por encima */
+  transform: scale(1.05); /* Escala el botón al pasar el mouse por encima */
+  color: black;
+}   

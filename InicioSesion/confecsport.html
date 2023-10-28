@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confecsport</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/mi pagina web/InicioSesion/consfecsport.css"
+    />
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="logo">
+        <img src="/mi pagina web/img/david-removebg-preview.png" alt="" />
+        <ul class="lista">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Categorias</a></li>
+          <li><a href="">Nosotros</a></li>
+          <li><a href="">Contactanos</a></li>
+        </ul>
+      </div>
+    </aside>
+    <br />
+    <nav class="barra-lateral">
+      <ul class="barr">
+        <li><img src="" alt="" /></li>
+        <li><h1>CONFECSPORT</h1></li>
+        <input class="buscar" type="text" placeholder="buscar" />
+        <div class="uno">
+          <li><img src="/mi pagina web/img/icons8-usuario-48.png" alt="" /></li>
+          <li>
+            <img
+              src="/mi pagina web/img/icons8-carrito-de-compras-48.png"
+              alt=""
+            />
+          </li>
+        </div>
+        <div class="dos">
+          <li><img src="" alt="imagen e/i" /></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="main-container">
+      <ul class="listo" data-animation="to-left">
+        <li>
+          <img src="/mi pagina web/img/t.png" alt="" /><a
+            href="#"
+            onclick="mostrarDiv('destacado')"
+            >Destacado</a
+          >
+        </li>
+        <li>
+          <img
+            class="imagen_novedades"
+            src="/mi pagina web/img/l.webp"
+            alt=""
+          /><a href="#" onclick="mostrarDiv('novedad')">Novedades</a>
+        </li>
+        <li>
+          <img
+            class="imagen_ofertas"
+            src="/mi pagina web/img/t (1).webp"
+            alt=""
+          /><a href="#" onclick="mostrarDiv('oferta')">Ofertas</a>
+        </li>
+      </ul>
+      <!-- CADA QUE LE PICHE A EL LINK DE ARRIBA ME VA A MOSTRAS LA IMAGEN DE ENLACE EN EL DIV-->
+      <div class="divs" id="destacado">
+        <img
+          class="imagen_dest"
+          src="/mi pagina web/img/t.png"
+          alt="DESTACADOS"
+        />
+        <h1 class="titulo_destacados" Destacados>DESTACADOS</h1>
+        <p class="parrafo_destacados" parrafo>Descripcion de seccion</p>
+      </div>
+      <div class="divs" id="novedad">
+        <img
+          class="imagen_dest"
+          src="/mi pagina web/img/l.webp"
+          alt="novedades"
+        />
+        <h1 class="titulo_novedades" Destacados>NOVEDADES</h1>
+        <p class="parrafo_novedades" parrafo>Descripcion de seccion</p>
+      </div>
+      <div class="divs" id="oferta">
+        <img
+          class="imagen_dest"
+          src="/mi pagina web/img/t (1).webp"
+          alt="ofertas"
+        />
+        <h1 class="titulo_ofertas" Destacados>OFERTAS</h1>
+        <p class="parrafo_ofertas" parrafo>Descripcion de seccion</p>
+      </div>
+    </div>
+    <div class="opciones">
+      <h1>Filtrar por categorias</h1>
+      <label for="colorSelect">Selecciona un color:</label>
+      <select id="colorSelect">
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+        <option value="custom">Personalizado</option>
+      </select>
+      <input type="color" id="customColor" style="display: none" />
+      <select name="Sexo" id="sexo">
+        <option value="Genero">Genero</option>
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+        <option value="Niño">Niño</option>
+      </select>
+      <select name="Talla" id="talla">
+        <option value="Talla">Talla</option>
+        <option value="Talla" disabled>Talla para Hombre</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+        <option value="MUJER" disabled>Talla para mujer</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      <select name="estilos" id="estilo">
+        <option value="estilo">Estilo</option>
+        <option value="Gymwear">Gymwear</option>
+        <option value="Athleisure">Athleisure</option>
+      </select>
+    </div>
+    <section class="col-12 col-md-9">
+        <div class="row row-cols-1 row-cols-md-3 my-3">
+            <div class="col">
+                <div class="card bg-primary p-2 shadow seleccion">
+                    <h3>TITULO 1</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-warning p-2 shadow seleccion">
+                    <h3>TITULO 2</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-success p-2 shadow seleccion">
+                    <h3>TITULO 3</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/mi pagina web/InicioSesion/confecsport.js"></script>
+  </body>
+</html>
