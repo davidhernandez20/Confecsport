@@ -12,22 +12,23 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="/mi pagina web/InicioSesion/consfecsport.css"
     />
   </head>
   <body>
-    <aside class="aside">
-      <div class="logo">
-        <img src="/mi pagina web/img/david-removebg-preview.png" alt="" />
-        <ul class="lista">
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Categorias</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Contactanos</a></li>
-        </ul>
-      </div>
+    <aside class="panel">
+      <img src="/mi pagina web/img/david-removebg-preview.png" alt="" />
+      <nav class="menu">
+        <a href="#seccion-uno">Inicio</a>
+        <a href="#seccion2">Categorias</a>
+        <a href="#seccion3">Nosotros</a>
+        <a href="#seccion4">Contactanos</a>
+      </nav>
     </aside>
-    <br />
     <nav class="barra-lateral">
       <ul class="barr">
         <li><img src="" alt="" /></li>
@@ -43,10 +44,20 @@
           </li>
         </div>
         <div class="dos">
-          <li><img src="" alt="imagen e/i" /></li>
+          <img
+            class="imagen_idiona"
+            src="/mi pagina web/img/idiomas.webp"
+            alt="idiomas"
+          />
+          <select class="select_idiomas" name="idioma" id="idioma">
+            <option value=""></option>
+            <option value="español">ESP</option>
+            <option value="ingles">ENG</option>
+          </select>
         </div>
       </ul>
     </nav>
+    <!-- <section id="seccion1" class="section"> -->
     <div class="main-container">
       <ul class="listo" data-animation="to-left">
         <li>
@@ -100,23 +111,26 @@
         <p class="parrafo_ofertas" parrafo>Descripcion de seccion</p>
       </div>
     </div>
-    <div class="opciones">
-      <h1>Filtrar por categorias</h1>
-      <label for="colorSelect">Selecciona un color:</label>
-      <select id="colorSelect">
-        <option value="red">Rojo</option>
-        <option value="green">Verde</option>
-        <option value="blue">Azul</option>
-        <option value="custom">Personalizado</option>
-      </select>
+    <div class="opciones" id="colorDisplay">
+      <h1>Filtrar por:</h1>
+      <input type="color" id="colorPicker" />
+      <div id="colorDisplay">
+        <!-- <select class="select_idiomas" id="colorPicker">
+          <option value="colorPicker">Color</option>
+          <option value="red">Rojo</option>
+          <option value="green">Verde</option>
+          <option value="blue">Azul</option>
+          <option value="custom">Personalizado</option>
+        </select> -->
+      </div>
       <input type="color" id="customColor" style="display: none" />
-      <select name="Sexo" id="sexo">
+      <select class="select_idiomas" name="Sexo" id="sexo">
         <option value="Genero">Genero</option>
         <option value="Hombre">Hombre</option>
         <option value="Mujer">Mujer</option>
         <option value="Niño">Niño</option>
       </select>
-      <select name="Talla" id="talla">
+      <select class="select_idiomas" name="Talla" id="talla">
         <option value="Talla">Talla</option>
         <option value="Talla" disabled>Talla para Hombre</option>
         <option value="S">S</option>
@@ -131,34 +145,34 @@
         <option value="L">L</option>
         <option value="XL">XL</option>
       </select>
-      <select name="estilos" id="estilo">
+      <select class="select_idiomas" name="estilos" id="estilo">
         <option value="estilo">Estilo</option>
         <option value="Gymwear">Gymwear</option>
         <option value="Athleisure">Athleisure</option>
       </select>
     </div>
-    <section class="col-12 col-md-9">
-        <div class="row row-cols-1 row-cols-md-3 my-3">
-            <div class="col">
-                <div class="card bg-primary p-2 shadow seleccion">
-                    <h3>TITULO 1</h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-warning p-2 shadow seleccion">
-                    <h3>TITULO 2</h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-success p-2 shadow seleccion">
-                    <h3>TITULO 3</h3>
-                    <p></p>
-                </div>
-            </div>
+    <section class="col-12 col-md-9 seccion_titulos">
+      <div class="row row-cols-1 row-cols-md-3 my-3">
+        <div class="col">
+          <div class="card bg-light p-2 shadow_seleccion">
+            <img src="" alt="producto 1" />
+          </div>
         </div>
+        <div class="col">
+          <div class="card bg-light p-2 shadow_seleccion">
+            <img src="" alt="producto 2" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-light p-2 shadow_seleccion">
+            <img src="" alt="producto 3" />
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="/mi pagina web/InicioSesion/confecsport.js"></script>
+    <script
+      src="/mi pagina web/InicioSesion/confecsport.js"
+      type="module"
+    ></script>
   </body>
 </html>

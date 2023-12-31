@@ -1,22 +1,31 @@
-function mostrarDiv(id) {
-    // Ocultar todos los divs
-    var divs = document.getElementsByClassName('divs');
-    for (var i = 0; i < divs.length; i++) {
-        divs[i].classList.remove('active');
-    }
 
-    // Mostrar el div especificado
-    var div = document.getElementById(id);
-    div.classList.add('active');
+function mostrarDiv(id) {
+  var divs = document.getElementsByClassName("divs");
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].classList.remove("active");
+  }
+
+  var div = document.getElementById(id);
+  div.classList.add("active");
 }
 
-        const colorSelect = document.getElementById("colorSelect");
-        const customColor = document.getElementById("customColor");
-        
-        colorSelect.addEventListener("change", function() {
-            if (colorSelect.value === "custom") {
-                customColor.style.display = "block";
-            } else {
-                customColor.style.display = "none";
-            }
-        });
+document.addEventListener("DOMContentLoaded", function () {
+  var enlaces = document.querySelectorAll(".listo a");
+
+  enlaces.forEach(function (enlace) {
+    enlace.addEventListener("click", function (event) {
+      event.preventDefault(); // Previene la acción predeterminada del enlace
+
+      var id = this.getAttribute("onclick").split("'")[1];
+      mostrarDiv(id);
+    });
+  });
+});
+
+const colorPicker = document.getElementById("colorPicker");
+const colorDisplay = document.getElementById("colorDisplay");
+
+colorPicker.addEventListener("input", function () {
+  const selectedColor = colorPicker.value;
+  colorDisplay.style.backgroundColor = selectedColor;
+});
