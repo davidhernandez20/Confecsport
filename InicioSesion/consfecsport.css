@@ -41,7 +41,7 @@ body {
 }
 
 .menu{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;            
@@ -57,7 +57,8 @@ body {
     margin-left: 200%;
 }
 
-.menu a{
+.menu a,
+.dropdown-menu{
     padding: 1rem;
     width: inherit;
     display: block;
@@ -70,7 +71,8 @@ body {
     margin-left: 35%;
 }
 
-.menu a:after {
+.menu a:after,
+.dropdown-menu:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -81,17 +83,65 @@ body {
     transition: all 0.3s ease-in-out;
   }
 
-.menu a:hover:after {
+.menu a:hover:after,
+.dropdown-menu:hover:after {
     background-color: black; /* Blue underline */
 }
 
-.menu a:hover{
+.menu a:hover,
+.dropdown-menu:hover{
     font-weight: bold;
     transform: scale(1.05); /* Slightly enlarge the link */
 }
 
-
-
+/* Estilo para el select */
+.dropdown-menu {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  /* Estilo para las opciones dentro del select */
+  .dropdown-menu option {
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo cuando se enfoca */
+  .dropdown-menu:focus {
+    outline: none;
+    border-color: transparent;
+  }
+  
+  /* Estilo cuando se pasa el ratón por encima */
+  .dropdown-menu:hover {
+    border-color: transparent;
+  }
+  
+  /* Estilo cuando está desplegado */
+  .dropdown-menu:active,
+  .dropdown-menu.open {
+    border-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Aspecto visual */
+  .dropdown-menu {
+    background-color: #fff;
+    border: transparent;
+    border-radius: 5px; 
+    text-align: justify;    
+    justify-content: space-between;    
+    top: 100%;
+    left: 7%;   
+}
+  
 /* BARRA NAVEGACION HORIZONTAL*/
 .barra-lateral {
     margin-top: 7px;
