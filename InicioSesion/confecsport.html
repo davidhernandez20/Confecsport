@@ -18,13 +18,22 @@
       rel="stylesheet"
       href="./consfecsport.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   </head>
   <body>
     <aside class="panel">
       <img src="../img/david-removebg-preview.png" alt="" />
       <nav class="menu">
         <a href="#seccion-uno">Inicio</a>
-        <a href="#seccion2">Categorias</a>
+        <!-- <a href="#seccion2">Categorias</a> -->
+        <div class="menu">
+          <select id="categorias" class="dropdown-menu">
+            <option value="categorias">Categorías</option>
+            <option value="#seccion2">Mujeres</option>
+            <option value="#seccion2">Hombres</option>
+            <option value="#seccion2">Niños</option>
+          </select>
+        </div>  
         <a href="#seccion3">Nosotros</a>
         <a href="#seccion4">Contactanos</a>
       </nav>
