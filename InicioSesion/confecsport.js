@@ -29,3 +29,12 @@ colorPicker.addEventListener("input", function () {
   const selectedColor = colorPicker.value;
   colorDisplay.style.backgroundColor = selectedColor;
 });
+
+
+
+const imagen = document.getElementById("imagen");
+const listas = document.getElementById("listas");
+
+imagen.addEventListener("click", function() {
+  listas.classList.toggle("comentario");
+});
