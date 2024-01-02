@@ -38,3 +38,4 @@ const listas = document.getElementById("listas");
 imagen.addEventListener("click", function() {
   listas.classList.toggle("comentario");
 });
+
