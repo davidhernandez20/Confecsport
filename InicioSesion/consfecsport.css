@@ -11,6 +11,7 @@ body {
     font-family: "Roboto", sans-serif;
     display: flex;
     position: relative;
+    height: 700vh;
 }
 
 
@@ -139,7 +140,7 @@ body {
 .barra-lateral {
     margin-top: 7px;
     width: 100%;
-    height: 80px;
+    height: 3%;
     align-items: center;
     background-color: rgb(211, 207, 207);
     display: flex; 
@@ -223,12 +224,12 @@ body {
     position: absolute;
     display: grid;
     place-items:center;
-    top: 50%;
-    left: 40%;
+    top: 3%;
+    left: 42%;
     flex-direction: row;
     background-color: white;
     width: 45%;
-    height: 85%;
+    height: 5%;
     border-radius: 30px;
     z-index: 997;
     border-bottom: 2px solid grey;
@@ -360,12 +361,13 @@ body {
 /* OPCIONES */
 
 .opciones{
-    position: relative;
+    position: absolute;
     display: flex;
-    top: 460px;
-    right: 62%;
+    top:8.3%;
+    right: 61%;
     flex-direction: column;
     width: 18%;
+    height: 5%;
     background-color: white;
     text-align: center;
     border-radius: 15%;
@@ -403,9 +405,9 @@ body {
 .seccion_titulos{
     background-color: rgb(211, 207, 207);
     width: 55%;
-    height: 68%;
+    height: 10%;
     position: absolute;
-    top: 155%;
+    top: 9%;
     left: 40%;
     padding: 0;
     margin: 0;
@@ -419,4 +421,48 @@ body {
     text-align: center;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+
+
+/* SECCION MUJERES */
+
+.mujeres{
+    margin-top:120%;
+    width: 90%;
+}
+
+
+.mujeres_confecsport{
+    position: absolute;
+    display: grid;
+    place-items:center;
+    top: 40%;
+    left: 39%;
+    flex-direction: row;
+    background-color: white;
+    width: 45%;
+    height: 5%;
+    border-radius: 30px;
+    z-index: 997;
+    border-bottom: 2px solid grey;
+}
+
+
+.mujeres_confecsport .parrafon{
+    text-align: end;
+    text-align: center;
+    width: 28%;
+    margin-right: -50%;
+    margin-top: -17%;
+    font-weight: bold;
+}
+
+
+.mujeres_confecsport img{
+    width: 53.8%;
+    margin-left: -48%;
+    margin-top: 12.3%;
+    overflow: hidden;
+    border-radius: 30px;
 }

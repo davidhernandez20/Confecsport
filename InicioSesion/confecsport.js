@@ -27,7 +27,7 @@ const colorDisplay = document.getElementById("colorDisplay");
 
 colorPicker.addEventListener("input", function () {
   const selectedColor = colorPicker.value;
-  colorDisplay.style.backgroundColor = selectedColor;
+  colorDisplay.style.Color = selectedColor;
 });
 
 
