@@ -31,7 +31,6 @@ colorPicker.addEventListener("input", function () {
 });
 
 
-
 const imagen = document.getElementById("imagen");
 const listas = document.getElementById("listas");
 
@@ -39,3 +38,16 @@ imagen.addEventListener("click", function() {
   listas.classList.toggle("comentario");
 });
 
+const flecha = document.getElementById("flecha");
+const lista_ordenar_lista = document.getElementById("lista_ordenar_lista");
+
+flecha.addEventListener("click", function() {
+  lista_ordenar_lista.classList.toggle("losto");
+});
+
+const flecha2 = document.getElementById("flecha2");
+const lista_ordenar_lista2 = document.getElementById("lista_ordenar_lista2");
+
+flecha2.addEventListener("click", function() {
+  lista_ordenar_lista2.classList.toggle("losto2");
+});
