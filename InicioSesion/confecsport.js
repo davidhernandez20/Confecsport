@@ -51,3 +51,10 @@ const lista_ordenar_lista2 = document.getElementById("lista_ordenar_lista2");
 flecha2.addEventListener("click", function() {
   lista_ordenar_lista2.classList.toggle("losto2");
 });
+
+const flecha3 = document.getElementById("flecha3");
+const lista_ordenar_lista3 = document.getElementById("lista_ordenar_lista3");
+
+flecha3.addEventListener("click", function() {
+  lista_ordenar_lista3.classList.toggle("losto3");
+});
