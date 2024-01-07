@@ -30,9 +30,9 @@ colorPicker.addEventListener("input", function () {
   colorDisplay.style.Color = selectedColor;
 });
 
-
 const imagen = document.getElementById("imagen");
 const listas = document.getElementById("listas");
+
 
 imagen.addEventListener("click", function() {
   listas.classList.toggle("comentario");
@@ -58,3 +58,38 @@ const lista_ordenar_lista3 = document.getElementById("lista_ordenar_lista3");
 flecha3.addEventListener("click", function() {
   lista_ordenar_lista3.classList.toggle("losto3");
 });
+
+
+function ocultarLista() {
+  let lista = document.getElementById("listas");
+  lista.classList.toggle("comentario");
+}
+
+window.addEventListener("load", ocultarLista);
+
+
+function ocultarListaDos(){
+  let ordenar = document.getElementById("lista_ordenar_lista");
+  ordenar.classList.toggle("losto");
+}
+
+window.addEventListener("load", ocultarListaDos);
+
+
+
+function ocultarListaTres(){
+  let ordenados = document.getElementById("lista_ordenar_lista2");
+  ordenados.classList.toggle("losto2");
+}
+
+window.addEventListener("load", ocultarListaTres);
+
+
+
+function ocultarListaCuatro(){
+  let ordenad = document.getElementById("lista_ordenar_lista3");
+  ordenad.classList.toggle("losto3");
+}
+
+window.addEventListener("load", ocultarListaCuatro);
+

@@ -14,8 +14,9 @@ body {
     height: 700vh;
 }
 
-
-
+*{
+    border: solid 2px red;
+}
 
 /* BARRA INICIO VERTICAL */
 
