@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
 
 
-
 body {
     margin: 0%;
     padding: 0%;
@@ -220,7 +219,7 @@ body {
     position: absolute;
     display: grid;
     place-items:center;
-    top: 3%;
+    top: 2.5%;
     left: 42%;
     flex-direction: row;
     background-color: white;
@@ -357,7 +356,7 @@ body {
 /* ORDENAR POR */
 .lista_ordenar{
     position: absolute;
-    top: 8.5%;
+    top: 7.6%;
     left: 85%;
     width: 12%;
 }
@@ -392,7 +391,7 @@ body {
 .opciones{
     position: absolute;
     display: flex;
-    top: 9.3%;
+    top: 8.4%;
     right: 61%;
     flex-direction: column;
     width: 15%;
@@ -438,8 +437,10 @@ body {
     flex-direction: row-reverse;
 	justify-content: center;
 	align-items: center;
-    top: 9%;
-    left: 29%;
+    top: 8%;
+    left: 40%;
+    width: auto;
+    padding: 0;
 }
 
 .container .card {
@@ -529,17 +530,12 @@ body {
 
 /* SECCION MUJERES */
 
-.mujeres{
-    margin-top:90%;
-    width: 90%;
-}
-
 
 .mujeres_confecsport{
     position: absolute;
     display: grid;
     place-items:center;
-    top: 20%;
+    top: 18%;
     left: 43%;
     flex-direction: row;
     background-color: white;
@@ -577,7 +573,7 @@ body {
     text-align: justify;
     padding: 1.5%;
     flex-direction: column;
-    top: 27%;
+    top: 25%;
     right: 61%;
     width: 15%;
     border-radius: 10%;
@@ -600,7 +596,7 @@ body {
 
 .lista_ordenar2{
     position: absolute;
-    top: 26%;
+    top: 23%;
     left: 85%;
     width: 12%;
 }
@@ -637,7 +633,7 @@ body {
     flex-direction: row-reverse;
 	justify-content: center;
 	align-items: center;
-    top: 26.7%;
+    top: 24.6%;
     left: 41%;
 }
 

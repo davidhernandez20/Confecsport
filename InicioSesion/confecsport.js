@@ -105,3 +105,11 @@ function ocultarListaCinco(){
 }
 
 window.addEventListener("load", ocultarListaCinco);
+
+
+function disableScroll() {
+  window.scrollTo(0, 0);
+  document.body.style.overflow = "hidden";
+}
+
+window.onload = disableScroll;
