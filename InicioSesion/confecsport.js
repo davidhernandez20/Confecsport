@@ -59,6 +59,12 @@ flecha3.addEventListener("click", function() {
   lista_ordenar_lista3.classList.toggle("losto3");
 });
 
+const flecha4 = document.getElementById("flecha4");
+const lista_ordenar_lista4 = document.getElementById("lista_ordenar_lista4");
+
+flecha4.addEventListener("click", function() {
+  lista_ordenar_lista4.classList.toggle("losto4");
+});
 
 function ocultarLista() {
   let lista = document.getElementById("listas");
@@ -93,3 +99,9 @@ function ocultarListaCuatro(){
 
 window.addEventListener("load", ocultarListaCuatro);
 
+function ocultarListaCinco(){
+  let ordenad = document.getElementById("lista_ordenar_lista4");
+  ordenad.classList.toggle("losto4");
+}
+
+window.addEventListener("load", ocultarListaCinco);
