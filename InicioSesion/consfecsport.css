@@ -958,3 +958,20 @@ body {
 	font-size: 1rem;
 }
 
+.Nosotros{
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+    width:auto;
+    height: 100vh;
+    background-color: rgb(107, 105, 103);
+}
+
+
+
+
+
+.nueva{
+    display: none;
+}
+
