@@ -115,10 +115,10 @@ function disableScroll() {
 window.onload = disableScroll;
 
 
-const nueva_pestaña = document.getElementById("nueva_pestaña");
+/* const nueva_pestaña = document.getElementById("nueva_pestaña");
 const Nosotros = document.getElementById("Nosotros");
 
 
 nueva_pestaña.addEventListener("click", function() {
   Nosotros.classList.toggle("nueva");
-});
+}); */
