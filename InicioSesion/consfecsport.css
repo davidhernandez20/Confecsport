@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
 
-
 body {
     margin: 0%;
     padding: 0%;
@@ -12,10 +11,7 @@ body {
     position: relative;
     height: 700vh;
 }
-
 /* BARRA INICIO VERTICAL */
-
-
 .panel{
     position: fixed;
     z-index: 998;
@@ -27,16 +23,12 @@ body {
     background-color: white;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
 }
-
-
-
 .panel img{
     margin-top: 12%;
     margin-left: 30%;
     margin-bottom: 32%;
     width: 40%;
 }
-
 .menu{
     width: 80%;
     display: flex;
@@ -44,16 +36,13 @@ body {
     justify-content: space-evenly;            
     align-items: center;
     text-align: center;
-
 }
-
 .menu img{
     max-width:100%;
     margin-top: 190%;
     display: flex;
     margin-left: 200%;
 }
-
 .menu .enlaces,
 .dropdown-menu{
     padding: 1rem;
@@ -67,7 +56,6 @@ body {
     position: relative;
     margin-left: 35%;
 }
-
 .menu .enlaces:after,
 .dropdown-menu:after {
     content: "";
@@ -78,8 +66,7 @@ body {
     height: 5%;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
-  }
-
+}
 .menu .enlaces:hover:after,
 .dropdown-menu:hover:after {
     background-color: black; /* Blue underline */
@@ -90,28 +77,23 @@ body {
     font-weight: bold;
     transform: scale(1.05); /* Slightly enlarge the link */
 }
-
 .comentario{
     display: none;
 }
-
 .enlaces_listas {
     font-size: 1rem;
     margin-right: 100%;
     margin-left: 20%;
     list-style-type: none;
 }
-
 .enlaces_listas a {
     font-size: 1.5em;
     color: black;
     text-decoration: none;
     position: relative;
     overflow: hidden;
-    display: inline-block;
-    
+    display: inline-block;   
 }
-
 .enlaces_listas a::before {
     content: "";
     position: absolute;
@@ -122,16 +104,12 @@ body {
     background-color: #000;
     transform: scaleX(0);
     transform-origin: bottom left;
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease;   
 }
-
 .enlaces_listas a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom right;
 }
-
-
 /* BARRA NAVEGACION HORIZONTAL*/
 .barra-lateral {
     margin-top: 1px;
@@ -143,15 +121,11 @@ body {
     justify-content: center;
     justify-content: space-between; 
 }
-
-
 .barra-lateral .barr h1{
     position: absolute;
     left: 22%;
     top: 1%;
 }
-
-
 .barra-lateral .barr {
     display: flex;
     justify-content: space-between;
@@ -159,12 +133,10 @@ body {
     align-items: center;
     padding-left: 0%;
 }
-
 .barra-lateral .barr li {
     list-style-type: none;
     align-items: center;
 }
-
 .barra-lateral .barr .buscar {
     position: absolute;
     left: 52%;
@@ -174,14 +146,10 @@ body {
     padding: 20px;
     border: transparent;
 }
-
-
 .uno{
     position: absolute;
     left: 80%;
-
 }
-
 .barra-lateral .barr .uno li{
     border-radius: 150px;
     background-color: rgb(243, 240, 240);
@@ -193,7 +161,6 @@ body {
     width: 40px;
     position: relative;
 }
-
 .barra-lateral .barr .uno li img{
     width: 70%;
     height: 70%;
@@ -202,18 +169,15 @@ body {
     left: 13%;
     cursor: pointer;
 }
-
 .dos img{
     width: 40px;
     height: 30px;
 }
-
 .select_idiomas{
     background-color: transparent;
     outline: none;
     margin-right: 15px;
 }
-
 /* CONTENEDORES DE PRODUCTOS */
 .main-container{
     position: absolute;
@@ -229,9 +193,6 @@ body {
     z-index: 997;
     border-bottom: 2px solid grey;
 }
-
-
-
 .main-container .listo li{
     list-style-type: none;
     display: flex;
@@ -240,12 +201,9 @@ body {
     padding-left: 50px;
     padding-right: 30px;
 }
-
-
 .main-container .listo{
     padding-right: 60%
 }
-
 .listo a{
     color: rgb(5, 5, 5);
     font-family: "Roboto", sans-serif;
@@ -254,7 +212,6 @@ body {
     display: inline-block;
     position: relative;
 }
-
 .listo a::after{
     content: '';
     position: absolute;
@@ -267,34 +224,28 @@ body {
     transform-origin: bottom left;
     transition:transform 0.8s ease-out;
 }
-
 .listo a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-
 .listo img{
     width: 4%;
     left: 10%;
     top: 21%;
     position: absolute;
 }
-
 .listo .imagen_novedades{
     width: 4%;
     left: 10%;
     top: 41%;
     position: absolute;
 }
-
 .listo .imagen_ofertas{
     width: 4%;
     left: 10%;
     top: 55%;
     position: absolute;
 }
-
 .divs {
     display: none;
     position: absolute;
@@ -304,55 +255,45 @@ body {
     height: 10%;
     margin-left: 90%;
 }
-
 .divs .imagen_dest{
     width: 90%; 
     margin-top: -45%;
     margin-left:70% ;
 }
-
 .divs .titulo_destacados{
     position: absolute;
     top: 250%;
-
 }
-
 .divs .parrafo_destacados{
     position: absolute;
     top: 400%;
     left: 90%;
     text-align: center;
 }
-
 .divs .titulo_novedades{
     position: absolute;
     top: 250%;
 }
-
 .divs .parrafo_novedades{
     position: absolute;
     top: 400%;
     left: 70%;
     text-align: center;
 }
-
 .divs .titulo_ofertas{
     position: absolute;
     top: 250%;
     left: 40%;
 }
-
 .divs .parrafo_ofertas{
     position: absolute;
     top: 420%;
     left: 80%;
     text-align: center;
 }
-
 .divs.active {
     display: block;
 }
-
 /* ORDENAR POR */
 .lista_ordenar{
     position: absolute;
@@ -360,17 +301,14 @@ body {
     left: 85%;
     width: 12%;
 }
-
 .lista_ordenar a {
     color: #000;
 }
-
 .titulo{
     background-color: white;
     border: none;
     border-radius: 20px;
 }
-
 .lista_ordenar_lista{
     background-color: white;
     position: absolute;
@@ -381,13 +319,10 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
-
 .losto{
     display: none;
 }
-
 /* OPCIONES */
-
 .opciones{
     position: absolute;
     display: flex;
@@ -400,20 +335,17 @@ body {
     text-align: center;
     border-radius: 15%;
 }
-
 .opciones p{
     display: flex;
     position: absolute;
     top: 25%;
     left: 28%;
 }
-
 .opciones input{
     position: absolute;
     top: 25%;
     left: 47%;
 }
-
 .opciones select{
     margin-bottom: 30px;
     margin-left: 68px;
@@ -422,14 +354,12 @@ body {
     border-bottom: 1px solid transparent;
     outline: transparent;
 }
-
 .opciones h1{
     font-size: 1.2rem;
     margin-top: 25px;
     margin-bottom: 50px;
     font-weight: bold;
 }
-
 .container {
 	position: absolute;
 	z-index: 994;
@@ -442,7 +372,6 @@ body {
     width: auto;
     padding: 0;
 }
-
 .container .card {
 	position: relative;
 	width: 270px;
@@ -456,7 +385,6 @@ body {
 	align-items: center;
 	backdrop-filter: blur(10px);
 }
-
 .container .card .content {
 	position: relative;
 	display: flex;
@@ -465,18 +393,15 @@ body {
 	flex-direction: column;
 	transition: 0.5s;
 }
-
 .container .card:hover .content {
 	transform: translateY(-20px);
 }
-
 .container .card .content .imgBx {
 	position: relative;
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
 }
-
 .container .card .content .imgBx img {
 	position: absolute;
 	top: 0;
@@ -485,7 +410,6 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-
 .container .card .content .contentBx h3 {
 	color: black;
 	text-transform: uppercase;
@@ -496,20 +420,17 @@ body {
 	margin: 20px 0 10px;
 	line-height: 1.1em;
 }
-
 .container .card .content .contentBx h3 span {
 	font-size: 12px;
 	font-weight: 300;
 	text-transform: initial;
 }
-
 .container .card .sci {
 	position: absolute;
 	bottom: 10px;
 	display: flex;
     right: 18%;
 }
-
 .container .card .sci li {
 	list-style: none;
 	margin: 0 10px;
@@ -517,20 +438,15 @@ body {
 	transition: 0.5s;
 	opacity: 0;
 }
-
 .container .card:hover .sci li {
 	transform: translateY(0px);
 	opacity: 1;
 }
-
 .container .card .sci li a {
 	color: black;
 	font-size: 1rem;
 }
-
 /* SECCION MUJERES */
-
-
 .mujeres_confecsport{
     position: absolute;
     display: grid;
@@ -544,10 +460,7 @@ body {
     border-radius: 30px;
     z-index: 997;
     border-bottom: 2px solid grey;
-
 }
-
-
 .parrafon{
     text-align: center;
     width: 28%;
@@ -555,17 +468,19 @@ body {
     margin-top: -30%;
     font-weight: bold;
 }
-
-
 .mujeres_confecsport img{
     width: 53.8%;
     margin-left: -48%;
     overflow: hidden;
     border-radius: 30px;
 }
-
 /* opciones seccion mujeres */
-
+.mujeres{
+    margin-top: 57%; 
+    height: 100vh;
+    width:250%;
+    margin-left: 15%;
+}
 .opciones2{
     background-color: white;
     position: absolute;
@@ -578,13 +493,11 @@ body {
     width: 15%;
     border-radius: 10%;
 }
-
 .opciones2 h1 {
     font-size: 1.5rem;
     position: relative;
     left: 20%;
 }
-
 .opciones2 a{
     position: relative;
     left: 20%;
@@ -593,24 +506,20 @@ body {
     color: #000;
     font-size: 18px;
 }
-
 .lista_ordenar2{
     position: absolute;
     top: 23%;
     left: 85%;
     width: 12%;
 }
-
 .lista_ordenar2 a {
     color: #000;
 }
-
 .titulo2{
     background-color: white;
     border: none;
     border-radius: 20px;
 }
-
 .lista_ordenar_lista2{
     background-color: white;
     position: absolute;
@@ -621,11 +530,9 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
-
 .losto2{
     display: none;
 }
-
 .container2 {
 	position: absolute;
 	z-index: 994;
@@ -636,7 +543,6 @@ body {
     top: 24.6%;
     left: 41%;
 }
-
 .container2 .card2 {
 	position: relative;
 	width: 270px;
@@ -650,7 +556,6 @@ body {
 	align-items: center;
 	backdrop-filter: blur(10px);
 }
-
 .container2 .card2 .content2 {
 	position: relative;
 	display: flex;
@@ -659,18 +564,15 @@ body {
 	flex-direction: column;
 	transition: 0.5s;
 }
-
 .container2 .card2:hover .content2 {
 	transform: translateY(-20px);
 }
-
 .container2 .card2 .content2 .imgBx2 {
 	position: relative;
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
 }
-
 .container2 .card2 .content2 .imgBx2 img {
 	position: absolute;
 	top: 0;
@@ -679,7 +581,6 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-
 .container2 .card2 .content2 .contentBx2 h3 {
 	color: black;
 	text-transform: uppercase;
@@ -690,20 +591,17 @@ body {
 	margin: 20px 0 10px;
 	line-height: 1.1em;
 }
-
 .container2 .card2 .content2 .contentBx2 h3 span {
 	font-size: 12px;
 	font-weight: 300;
 	text-transform: initial;
 }
-
 .container2 .card2 .sci2 {
 	position: absolute;
 	bottom: 10px;
 	display: flex;
     right: 18%;
 }
-
 .container2 .card2 .sci2 li {
 	list-style: none;
 	margin: 0 10px;
@@ -711,24 +609,20 @@ body {
 	transition: 0.5s;
 	opacity: 0;
 }
-
 .container2 .card2:hover .sci2 li {
 	transform: translateY(0px);
 	opacity: 1;
 }
-
 .container2 .card2 .sci2 li a {
 	color: black;
 	font-size: 1rem;
 }
-
 /* SECCION HOMBRES */
 .hombres{
-    margin-top:90%;
-    width: 90%;
+    margin-top: 128%; 
+    height: 100vh;
+    width: 400vw;
 }
-
-
 .hombres_confecsport{
     position: absolute;
     display: grid;
@@ -742,10 +636,7 @@ body {
     border-radius: 30px;
     z-index: 997;
     border-bottom: 2px solid grey;
-
 }
-
-
 .parrafon2{
     text-align: center;
     width: 28%;
@@ -753,17 +644,13 @@ body {
     margin-top: -26%;
     font-weight: bold;
 }
-
-
 .hombres_confecsport img{
     width: 53.8%;
     margin-left: -48%;
     overflow: hidden;
     border-radius: 30px;
 }
-
 /* opciones seccion hombres */
-
 .opciones3{
     background-color: white;
     position: absolute;
@@ -776,13 +663,11 @@ body {
     width: 15%;
     border-radius: 10%;
 }
-
 .opciones3 h1 {
     font-size: 1.5rem;
     position: relative;
     left: 20%;
 }
-
 .opciones3 a{
     position: relative;
     left: 20%;
@@ -791,24 +676,20 @@ body {
     color: #000;
     font-size: 18px;
 }
-
 .lista_ordenar3{
     position: absolute;
     top: 45.7%;
     left: 85%;
     width: 12%;
 }
-
 .lista_ordenar3 a {
     color: #000;
 }
-
 .titulo3{
     background-color: white;
     border: none;
     border-radius: 20px;
 }
-
 .lista_ordenar_lista3{
     background-color: white;
     position: absolute;
@@ -819,11 +700,9 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
-
 .losto3{
     display: none;
 }
-
 .container3 {
 	position: absolute;
 	z-index: 994;
@@ -834,7 +713,6 @@ body {
     top: 46.7%;
     left: 41%;
 }
-
 .container3 .card3 {
 	position: relative;
 	width: 270px;
@@ -848,7 +726,6 @@ body {
 	align-items: center;
 	backdrop-filter: blur(10px);
 }
-
 .container3 .card3 .content3 {
 	position: relative;
 	display: flex;
@@ -857,18 +734,15 @@ body {
 	flex-direction: column;
 	transition: 0.5s;
 }
-
 .container3 .card3:hover .content3 {
 	transform: translateY(-20px);
 }
-
 .container3 .card3 .content3 .imgBx3 {
 	position: relative;
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
 }
-
 .container3 .card3 .content3 .imgBx3 img {
 	position: absolute;
 	top: 0;
@@ -877,7 +751,6 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-
 .container3 .card3 .content3 .contentBx3 h3 {
 	color: black;
 	text-transform: uppercase;
@@ -888,20 +761,17 @@ body {
 	margin: 20px 0 10px;
 	line-height: 1.1em;
 }
-
 .container3 .card3 .content3 .contentBx3 h3 span {
 	font-size: 12px;
 	font-weight: 300;
 	text-transform: initial;
 }
-
 .container3 .card3 .sci3 {
 	position: absolute;
 	bottom: 10px;
 	display: flex;
     right: 18%;
 }
-
 .container3 .card3 .sci3 li {
 	list-style: none;
 	margin: 0 10px;
@@ -909,29 +779,25 @@ body {
 	transition: 0.5s;
 	opacity: 0;
 }
-
 .container3 .card3:hover .sci3 li {
 	transform: translateY(0px);
 	opacity: 1;
 }
-
 .container3 .card3 .sci3 li a {
 	color: black;
 	font-size: 1rem;
 }
-
 /* seccion niños */
 .niños{
-    margin-top:90%;
-    width: 90%;
+    margin-top: 110%;
+    height: 100vh;
+    width: 40vw;
 }
-
-
 .niños_confecsport{
     position: absolute;
     display: grid;
     place-items:center;
-    top: 56%;
+    top: 55.5%;
     left: 43%;
     flex-direction: row;
     background-color: white;
@@ -940,10 +806,7 @@ body {
     border-radius: 30px;
     z-index: 997;
     border-bottom: 2px solid grey;
-
 }
-
-
 .parrafon3{
     text-align: center;
     width: 30%;
@@ -951,8 +814,6 @@ body {
     margin-top: -26%;
     font-weight: bold;
 }
-
-
 .niños_confecsport img{
     width: 36.2%;
     margin-left: -65%;
@@ -960,7 +821,6 @@ body {
     border-radius: 30px;
     margin-top: 45px;
 }
-
 .opciones4{
     background-color: white;
     position: absolute;
@@ -973,13 +833,11 @@ body {
     width: 15%;
     border-radius: 10%;
 }
-
 .opciones4 h1 {
     font-size: 1.5rem;
     position: relative;
     left: 20%;
 }
-
 .opciones4 a{
     position: relative;
     left: 20%;
@@ -988,24 +846,20 @@ body {
     color: #000;
     font-size: 18px;
 }
-
 .lista_ordenar4{
     position: absolute;
     top: 62%;
     left: 85%;
     width: 12%;
 }
-
 .lista_ordenar4 a {
     color: #000;
 }
-
 .titulo4{
     background-color: white;
     border: none;
     border-radius: 20px;
 }
-
 .lista_ordenar_lista4{
     background-color: white;
     position: absolute;
@@ -1016,11 +870,9 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
-
 .losto4{
     display: none;
 }
-
 .container4 {
 	position: absolute;
 	z-index: 994;
@@ -1031,7 +883,6 @@ body {
     top: 62.6%;
     left: 41%;
 }
-
 .container4 .card4 {
 	position: relative;
 	width: 270px;
@@ -1045,7 +896,6 @@ body {
 	align-items: center;
 	backdrop-filter: blur(10px);
 }
-
 .container4 .card4 .content4 {
 	position: relative;
 	display: flex;
@@ -1054,18 +904,15 @@ body {
 	flex-direction: column;
 	transition: 0.5s;
 }
-
 .container4 .card4:hover .content4 {
 	transform: translateY(-20px);
 }
-
 .container4 .card4 .content4 .imgBx4 {
 	position: relative;
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
 }
-
 .container4 .card4 .content4 .imgBx4 img {
 	position: absolute;
 	top: 0;
@@ -1074,7 +921,6 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
-
 .container4 .card4 .content4 .contentBx4 h3 {
 	color: black;
 	text-transform: uppercase;
@@ -1085,20 +931,17 @@ body {
 	margin: 20px 0 10px;
 	line-height: 1.1em;
 }
-
 .container4 .card4 .content4 .contentBx4 h3 span {
 	font-size: 12px;
 	font-weight: 300;
 	text-transform: initial;
 }
-
 .container4 .card4 .sci4 {
 	position: absolute;
 	bottom: 10px;
 	display: flex;
     right: 18%;
 }
-
 .container4 .card4 .sci4 li {
 	list-style: none;
 	margin: 0 10px;
@@ -1106,14 +949,29 @@ body {
 	transition: 0.5s;
 	opacity: 0;
 }
-
 .container4 .card4:hover .sci4 li {
 	transform: translateY(0px);
 	opacity: 1;
 }
-
 .container4 .card4 .sci4 li a {
 	color: black;
 	font-size: 1rem;
+}
+
+.Nosotros{
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+    width:auto;
+    height: 100vh;
+    background-color: rgb(107, 105, 103);
+}
+
+
+
+
+
+.nueva{
+    display: none;
 }
 

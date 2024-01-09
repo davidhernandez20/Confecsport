@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   enlaces.forEach(function (enlace) {
     enlace.addEventListener("click", function (event) {
-      event.preventDefault(); // Previene la acción predeterminada del enlace
+      event.preventDefault(); 
 
       var id = this.getAttribute("onclick").split("'")[1];
       mostrarDiv(id);
@@ -113,3 +113,12 @@ function disableScroll() {
 }
 
 window.onload = disableScroll;
+
+
+const nueva_pestaña = document.getElementById("nueva_pestaña");
+const Nosotros = document.getElementById("Nosotros");
+
+
+nueva_pestaña.addEventListener("click", function() {
+  Nosotros.classList.toggle("nueva");
+});
